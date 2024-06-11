@@ -1,0 +1,247 @@
+h1 {
+   color: #e75b24;
+   /*text-decoration: underline;*/
+   text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#header {
+    background-color:rgb(230, 223, 219);
+}
+/*Making image opace and placed at background*
+#top-img {
+    position: fixed;
+    opacity: 0.22;
+    z-index: -1;
+}
+
+/*******Navigation Bar*********/
+.navbar{
+    background-color: rgb(197, 165, 154);;
+    padding: 0.1px 8px;
+    border-radius: 36px;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li ,a{
+    text-decoration: none;
+    color: hsl(0, 3%, 12%);
+    padding: 2px 3px;
+}
+.navbar a:hover {
+    color: #0071e3;
+}
+.search{
+    float: right;
+    padding: 1px 69px
+}
+.navbar input{
+    padding: 1px 4px;
+    border-radius: 7px;
+}
+
+/*.navbtn1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em ;
+    border-radius: 10px;
+    border: 2px solid #ff6f00;
+    color: hsl(103, 95%, 47%);
+
+    transition: transform 0.3s ease 0s;
+}
+.navbtn1:hover{
+    transform: translateY(6px);
+    color: var(--clr-light);
+    background-color: var(orange);
+}
+.navbtn2{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.1em ;
+    border-radius: 10px;
+    border: 2px solid #ff6f00;
+    color: hsl(103, 95%, 47%);
+
+    transition: transform 0.3s ease 0s;
+}
+.navbtn2:hover{
+    transform: translateY(6px);
+    color: var(--clr-light);
+    background-color: var(orange);
+}
+
+.navbtn3{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.1em ;
+    border-radius: 10px;
+    border: 2px solid #ff6f00;
+    color: hsl(103, 95%, 47%);
+
+    transition: transform 0.3s ease 0s;
+}
+.navbtn3:hover{
+    transform: translateY(6px);
+    color: var(--clr-light);
+    background-color: var(orange);
+}
+
+.navbtn4{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.1em ;
+    border-radius: 10px;
+    border: 2px solid #ff6f00;
+    color: hsl(103, 95%, 47%);
+
+    transition: transform 0.3s ease 0s;
+}
+.navbtn4:hover{
+    transform: translateY(6px);
+    color: var(--clr-light);
+    background-color: var(orange);
+}*
+
+/*Button*/
+.btn1 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    /*background-color: var(--clr-rgba);*/
+    color:hsl(0, 98%, 36%);
+    border: 1px solid hsl(0, 82%, 53%); 
+    
+    /*transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease; /*Defines the exceleration curve for the transition EASE is the default timing function*
+    transition-delay: 0s;*/
+
+transition: transform 0.3s ease 0s;
+}
+.btn1:hover{                     /*buttion transition*/
+    transform: translateY(-6px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+.btn2{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em ;
+    border-radius: 5px;
+    border: 1px solid #3c42f4;
+    color: #3c42f4;
+
+    transition: transform 0.3s ease 0s;
+}
+.btn2:hover{
+    transform: translateY(-6px);
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+}
+
+.btn3{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em ;
+    border-radius: 5px;
+    border: 1px solid #ff6f00;
+    color: #ff6f00;
+
+    transition: transform 0.3s ease 0s;
+}
+.btn3:hover{
+    transform: translateY(-6px);
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+}
+
+.btn4{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em ;
+    border-radius: 5px;
+    border: 1px solid #2e2a2a;
+    color: #2e2a2a;
+
+    transition: transform 0.3s ease 0s;
+}
+.btn4:hover{
+    transform: translateY(-6px);
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+}
+
+.btn5{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.1em 0.5em ;
+    border-radius: 5px;
+    border: 1px solid #339800;
+    color: #246b00;
+
+    transition: transform 0.3s ease 0s;
+}
+.btn5:hover{
+    transform: translateY(-6px);
+    color: var(--clr-light);
+    background-color: var(--clr-accent);
+}
+
+/*Animation*/
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px); /*beginning of the animation*/
+    }
+
+    to {
+        transform: translateX(0);  /*end of the animation*/
+    }
+}
+
+.slideInLeft {
+        animation: slideInLeft 1s ease-in 15ms 1 normal both;
+
+    /*animation-name: slideInLeft;  /*for selection the keyframe you want to use to animate the element*
+    animation-duration: 1s;  /*this property defines how long it takes to animate from 0 percent to 100 percent*
+    animation-timing-function: ease-in;
+    animation-delay: 15ms;  /*sets a delay before running the animation*
+    animation-iteration-count: 1;  /*how many times you want animation to run*
+    animation-direction: normal;  /*defines wether the animation runs normally or reverse*
+    animation-fill-mode: both;*/
+
+    transform: translateX(-150px);
+}
+
+/*Practice.html making a container*/
+.container{
+    /*background-color: #491602;*
+    display: grid; /*notihng happens this is because we have to tell grid how many rows and colums we want to find*/
+    grid-template-rows: 200px 100px;   /*to define rows and coloums we use the grid template rows and grid template coloums properties*/
+    grid-template-columns: 40px;    /*they work by defining a track for each value that you pass it for example if i give 100px to the columns now i`ll have one columns of 100 pixels*/
+    
+}
+.item1{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+/********/
+.footer{
+    text-align: center;
+        background-color: hsl(0, 100%, 98%);
+        padding: 40px 20px;
+        
+}
